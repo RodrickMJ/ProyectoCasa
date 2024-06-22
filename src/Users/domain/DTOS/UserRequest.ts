@@ -6,5 +6,5 @@ export interface UserRequest {
 
 export interface UserCreateRequest extends UserRequest {
     nombre: string;
-    rol?: 'estudiante' | 'docente' | null;
+    rol?: 'admin' | 'familiar' | 'invitado' | null;
 }
