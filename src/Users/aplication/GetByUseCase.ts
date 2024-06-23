@@ -1,6 +1,5 @@
 import UserRepository from "../domain/UserRepository";
 import UserResponse from "../domain/DTOS/UserResponse";
-import userEntry from "../domain/UserEntry";
 
 export default class getByUseCase {
     constructor(readonly repository: UserRepository) {}
@@ -16,7 +15,10 @@ export default class getByUseCase {
             id: result.id,
             username: result.username,
             nombre: result.nombre,
-            rol: result.rol
+            rol: result.rol,
+            email: result.email,
+            password: result.password,
+            permissions: result.permissions
         };
 
         return response;

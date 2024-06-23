@@ -1,3 +1,5 @@
+export type UserRole = 'admin' | 'esposa' | 'hijo' | 'invitado' | 'ladron' | 'familiar';
+
 export interface UserRequest {
     username: string;
     email: string;
@@ -6,5 +8,5 @@ export interface UserRequest {
 
 export interface UserCreateRequest extends UserRequest {
     nombre: string;
-    rol?: 'admin' | 'familiar' | 'invitado' | null;
+    rol?: UserRole | null;
 }

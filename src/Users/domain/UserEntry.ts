@@ -4,5 +4,6 @@ export default interface userEntry {
     nombre: string;
     email: string;
     password: string;
-    rol: string | null; 
+    rol: string | null;
+    permissions: string[];
 }
